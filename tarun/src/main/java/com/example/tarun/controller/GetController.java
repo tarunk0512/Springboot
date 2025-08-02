@@ -10,4 +10,10 @@ public class GetController {
     public String sayHello() {
         return "Hello, World!";
     }
-}
+
+        @GetMapping("/hello/auth")
+        public String sayHelloAuth() {
+            return "Hello, authenticated user!";
+        }
+    }
+
